@@ -1,15 +1,10 @@
 <?php
 
-include_once 'lib/bootstrap-four-wp-navwalker.php';
+include_once 'lib/b4-wp-navwalker.php';
 
-global $bootstrap_four_version;
-
-$bootstrap_four_version = '4.0.0';
-
-// Le sigh...
 if ( ! isset( $content_width ) ) $content_width = 837;
 
-class Indochina
+class B4_Theme
 {
     const VERSION = '1.0';
     //
@@ -28,7 +23,7 @@ class Indochina
     function widgets_init()
     {
         register_sidebar([
-        'name' => __( 'Right Sidebar', 'bootstrap-four' ),
+        'name' => __('Right Sidebar', 'b4'),
         'id' => 'right-sidebar',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
@@ -43,16 +38,16 @@ class Indochina
         add_theme_support('automatic-feed-links' );
         add_theme_support('title-tag' );
         add_theme_support('html5', ['search-form', 'comment-form', 'comment-list', 'gallery', 'caption']);
-        register_nav_menus(['main_menu' => __( 'Main Menu', 'bootstrap-four' )]);
+        register_nav_menus(['main_menu' => __( 'Main Menu', 'b4')]);
         add_editor_style( 'css/bootstrap.min.css' );        
     }
     //
     function enqueue_scripts()
     {
-        wp_enqueue_style('font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '4.4.0' );
-        wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), self::VERSION );
-        wp_enqueue_style('styles', get_stylesheet_uri(), array('bootstrap' ), '1' );
-        wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array('jquery'), self::VERSION, true );
+        wp_enqueue_style('font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', [], '4.4.0' );
+        wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', [], self::VERSION );
+        wp_enqueue_style('styles', get_stylesheet_uri(), ['bootstrap'], '1' );
+        wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.js', ['jquery'], self::VERSION, true );
     }
     //
     function nav_li_class($classes, $item)
@@ -76,23 +71,23 @@ class Indochina
     {
         $fields['fields']['author'] = '
   <fieldset class="form-group comment-form-email">
-    <label for="author">' . __( 'Name *', 'bootstrap-four' ) . '</label>
-    <input type="text" class="form-control" name="author" id="author" placeholder="' . __( 'Name', 'bootstrap-four' ) . '" aria-required="true" required>
+    <label for="author">' . __( 'Name *', 'b4' ) . '</label>
+    <input type="text" class="form-control" name="author" id="author" placeholder="' . __( 'Name', 'b4' ) . '" aria-required="true" required>
   </fieldset>';
         $fields['fields']['email'] ='
   <fieldset class="form-group comment-form-email">
-    <label for="email">' . __( 'Email address *', 'bootstrap-four' ) . 'Email address *</label>
-    <input type="email" class="form-control" id="email" placeholder="' . __( 'Enter email', 'bootstrap-four' ) . '" aria-required="true" required>
-    <small class="text-muted">' . __( 'Your email address will not be published.', 'bootstrap-four' ) . '</small>
+    <label for="email">' . __( 'Email address *', 'b4' ) . 'Email address *</label>
+    <input type="email" class="form-control" id="email" placeholder="' . __( 'Enter email', 'b4' ) . '" aria-required="true" required>
+    <small class="text-muted">' . __( 'Your email address will not be published.', 'b4' ) . '</small>
   </fieldset>';
         $fields['fields']['url'] = '
   <fieldset class="form-group comment-form-email">
-    <label for="url">' . __( 'Website *', 'bootstrap-four' ) . '</label>
-    <input type="text" class="form-control" name="url" id="url" placeholder="' . __( 'http://example.org', 'bootstrap-four' ) . '">
+    <label for="url">' . __( 'Website *', 'b4' ) . '</label>
+    <input type="text" class="form-control" name="url" id="url" placeholder="' . __( 'http://example.org', 'b4' ) . '">
   </fieldset>';
         $fields['comment_field'] = '
   <fieldset class="form-group">
-    <label for="comment">' . __( 'Comment *', 'bootstrap-four' ) . '</label>
+    <label for="comment">' . __( 'Comment *', 'b4' ) . '</label>
     <textarea class="form-control" id="comment" name="comment" rows="3" aria-required="true" required></textarea>
   </fieldset>';
         $fields['comment_notes_before'] = '';
@@ -112,17 +107,17 @@ class Indochina
         if ( $GLOBALS['wp_query']->max_num_pages > 1 )
         {
 
-            $defaults = array(
+            $defaults = [
             'total'     => isset( $wp_query->max_num_pages ) ? $wp_query->max_num_pages : 1,
             'current'   => get_query_var( 'paged' ) ? intval( get_query_var( 'paged' ) ) : 1,
             'type'      => 'array',
             'prev_text' => '&laquo;',
             'next_text' => '&raquo;',
-            );
+            ];
 
-            $params = wp_parse_args( $args, $defaults );
+            $params = wp_parse_args($args, $defaults);
 
-            $paginate = paginate_links( $params );
+            $paginate = paginate_links($params);
 
             if( $paginate )
             {
@@ -145,12 +140,12 @@ class Indochina
         return $pagination;
     }
     //
-    function the_posts_pagination( $args = '' )
+    function the_posts_pagination($args = '')
     {
-        echo bootstrap_four_get_posts_pagination( $args );
+        echo $this->get_posts_pagination( $args );
     }
     //
 }
 
-$ich = new Indochina;
+$b4 = new B4_Theme;
 ?>

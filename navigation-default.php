@@ -5,8 +5,8 @@ $main_nav_options = array(
   'container'         => '',
   'container_class'   => '',
   'menu_class'        => 'nav navbar-nav',
-  'fallback_cb'       => 'bootstrap_four_wp_navwalker::fallback',
-  'walker'            => new bootstrap_four_wp_navwalker()
+  'fallback_cb'       => 'b4_wp_navwalker::fallback',
+  'walker'            => new b4_wp_navwalker()
 );
 ?>
 

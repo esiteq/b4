@@ -10,14 +10,14 @@
     while ( have_posts() ) : the_post();
       get_template_part( 'content', get_post_format() );
     endwhile;
-      bootstrap_four_the_posts_pagination();
+      $b4->the_posts_pagination();
   else :
-    ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'bootstrap-four' ); ?></p><?php
+    ?><p><?php _e('Sorry, no posts matched your criteria.', 'b4'); ?></p><?php
   endif;
 ?>
     </div><!-- .col -->
     <div class='col-lg-3'>
-      <?php dynamic_sidebar( 'Right Sidebar' ); ?>
+      <?php dynamic_sidebar('Right Sidebar'); ?>
     </div><!-- .col -->
   </div><!-- .row -->
 </div><!-- .container.main-container -->
