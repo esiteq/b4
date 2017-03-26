@@ -11,14 +11,6 @@ Minimalistic Wordpress theme on Bootstrap 4 (alpha). This theme is based on Boot
 * Font Awesome
 * Favicon Support
 
-## Future Plans
-
-* Theme Options Page + Customizer
-* SASS Support
-* Stater Child Theme
-* Sidebar + Widget Support
-* Much More!
-
 ## Copyrights and License Information for theme resources
 
 This theme is based on Bootstrap Four by Taylor Young. It is under GNU/GPL v3 license which means that you can freely distribute it, change it, use it in any products, including commercial.
