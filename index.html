@@ -1,0 +1,826 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="Alex Raven" />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="fonts/webfonts.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<title>Indochina</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="row">
+                    <div class="col-sm-12 col-xs-6">
+                        <h1>Indochina</h1>
+                        <h4>To travel is to live</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-right">
+                    <button class="btn btn-primary">Log In</button>
+                    <button class="btn btn-default">Create Account</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Destinations</a></li>
+                    <li><a href="#">Insights</a></li>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#" class="special">Become a host</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Homepage Hero -->
+    <div class="home-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h1>Rent unique places to stay from local hosts and hotels in 150+ countries.</h1>
+                    <p><button class="btn btn-primary">How it works?</button><button class="btn btn-secondary">Get started</button></p>
+                </div>
+                <div class="col-sm-8" style="padding-top: 100px;">
+                    <!-- Tabs -->
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#hotels-tab">Hotels and Hosts</a></li>
+                        <li><a data-toggle="tab" href="#flights-tab">Flights</a></li>
+                        <li><a data-toggle="tab" href="#cars-tab">Cars</a></li>
+                        <li><a data-toggle="tab" href="#tours-tab">Tours</a></li>
+                        <li><a data-toggle="tab" href="#activities-tab">Activities</a></li>
+                    </ul>
+                    <!-- Tabs contents -->
+                    <div class="tab-content">
+                        <!-- Hotels -->
+                        <div id="hotels-tab" class="tab-pane fade in active">
+                            <div>
+                                <div class="hero-form-left">
+                                    <form class="form-inline" class="search-main">
+                                        <div class="form-group col-sm-12" style="margin-bottom: 20px;">
+                                            <input type="text" class="form-control search-input" name="q" id="q" placeholder="Where do you want to go?" />
+                                        </div>
+                                        <div class="form-group col-sm-3" style="padding-right: 5px;">
+                                            <div class="hero-caption"><span>Check In</span></div>
+                                            <div class="input-arrow-right"></div>
+                                            <input type="text" class="form-control hero-control date-picker" name="checkin" id="checkin" value="02/10/2016" />
+                                        </div>
+                                        <div class="form-group col-sm-3" style="padding-left: 5px;">
+                                            <div class="hero-caption"><span>Check Out</span></div>
+                                            <input type="text" class="form-control hero-control date-picker" name="checkout" id="checkout" value="02/20/2016" />
+                                        </div>
+                                        <div class="form-group col-sm-3" style="padding-right:5px;">
+                                            <div class="hero-caption"><span>Guests</span></div>
+                                            <select class="form-control hero-control">
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-sm-3" style="padding-left: 5px;">
+                                            <div class="hero-caption"><span>Bedrooms</span></div>
+                                            <select class="form-control hero-control">
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="hero-form-right">
+                                    <a href="#" class="hero-search-btn">Search</a>
+                                </div>
+                                <div style="clear: both;"></div>
+                            </div>
+                        </div>
+                        <!-- Flights -->
+                        <div id="flights-tab" class="tab-pane fade">
+                            <div class="tab-placeholder">Flights</div>
+                        </div>
+                        <!-- Cars -->
+                        <div id="cars-tab" class="tab-pane fade">
+                            <div class="tab-placeholder">Cars</div>
+                        </div>
+                        <!-- Tours -->
+                        <div id="tours-tab" class="tab-pane fade">
+                            <div class="tab-placeholder">Tours</div>
+                        </div>
+                        <!-- Activities -->
+                        <div id="activities-tab" class="tab-pane fade">
+                            <div class="tab-placeholder">Activities</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="hero-subtitle">Popular Destinations</h2>
+                </div>
+                <div class="col-sm-12">
+                    <div class="hero-slider" style="margin-left: -10px; margin-right:-10px;">
+                        <div>
+                            <div class="hero-slide" style="background-image:url(images/hero-slider/city1.jpg);">
+                                <h3>From $11</h3>
+                                <h1>Da Nang</h1>
+                                <h2>Vietnam</h2>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="hero-slide" style="background-image:url(images/hero-slider/city2.jpg);">
+                                <h3 class="hero-price">From $19</h3>
+                                <h1>Ha Long Bay</h1>
+                                <h2>Vietnam</h2>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="hero-slide" style="background-image:url(images/hero-slider/city3.jpg);">
+                                <h3 class="hero-price">From $14</h3>
+                                <h1>Bangkok</h1>
+                                <h2>Thailand</h2>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="hero-slide" style="background-image:url(images/hero-slider/city4.jpg);">
+                                <h3 class="hero-price">From $16</h3>
+                                <h1>Phnom Penh</h1>
+                                <h2>Cambodia</h2>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="hero-slide" style="background-image:url(images/hero-slider/city5.jpg);">
+                                <h3 class="hero-price">From $18</h3>
+                                <h1>Vientiane</h1>
+                                <h2>Laos</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- row -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="looking-block">
+                        <div class="row">
+                            <div class="col-lg-4 text-center looking-title">
+                                <h3>What are you looking for?</h3>
+                                <p>Find a place that best fits to your plans</p>
+                            </div>
+                            <div class="col-lg-8 text-center">
+                                <a href="#" class="icon-looking icon-discover">Discover</a>
+                                <a href="#" class="icon-looking icon-tropical">Tropical</a>
+                                <a href="#" class="icon-looking icon-sight">Sightseeing</a>
+                                <a href="#" class="icon-looking icon-job">Job &amp; Career</a>
+                                <a href="#" class="icon-looking icon-experience">Experience</a>
+                                <a href="#" class="icon-looking icon-nightlife">Nightlife</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- row -->
+        </div><!-- container -->
+    </div>
+    <!-- Best countries to live in -->
+    <div class="container best-countries-container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1 class="block-subtitle">Best countries to live in</h1>
+            </div>
+            <div class="col-sm-6">
+                <ul class="filters-menu">
+                    <li><a href="#">Recommended</a></li>
+                    <li class="sep">|</li>
+                    <li><a href="#">Popular</a></li>
+                    <li class="sep">|</li>
+                    <li><a href="#">Cheapest</a></li>
+                    <li class="sep">|</li>
+                    <li class="active"><a href="#">Trending</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row best-countries-row">
+            <div class="col-sm-3 col-xs-6">
+                <div class="country-thumb" style="background-image: url(images/live-in/thailand.jpg);"></div>
+                <h3>Thailand<span>From $15</span></h3>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <div class="country-thumb" style="background-image: url(images/live-in/malaysia.jpg);"></div>
+                <h3>Malaysia<span>From $18</span></h3>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <div class="country-thumb" style="background-image: url(images/live-in/australia.jpg);"></div>
+                <h3>Australia<span>From $70</span></h3>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <div class="country-thumb" style="background-image: url(images/live-in/singapore.jpg);"></div>
+                <h3>Singapore<span>From $65</span></h3>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonials -->
+    <div class="home-testimonials">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h1 class="block-title white tst-title">Recent reviews from our happy travelers</h1>
+                </div>
+            </div>
+            <div style="margin:auto; max-width:1500px; width:100%; min-height:100px">
+                <div class="tst-home">
+                    <div>
+                <div class="tst-slide">
+                    <div class="tst-thumb" style="background-image:url(images/testimonials/testimonial-1.jpg);">
+                    </div>
+                    <span class="tst-user" style="background-image:url(images/testimonials/user-1.jpg);"></span>
+                    <ul class="small-stars tst-stars">
+                        <li class="star-1"></li>
+                        <li class="star-1"></li>
+                        <li class="star-1"></li>
+                        <li class="star-05"></li>
+                        <li class="star-0"></li>
+                    </ul>
+                    <p>Thomas was a great host and was so nice when we unexpectedly landed in Melbourne earlier than anticipated. The apartment is very homey and welcoming and very close to transport. We had a great stay.</p>
+                    <h5>Edgar Glover</h5>
+                </div>
+                    </div>
+                    <div>
+                <div class="tst-slide">
+                    <div class="tst-thumb" style="background-image:url(images/testimonials/testimonial-2.jpg);">
+                    </div>
+                    <span class="tst-user" style="background-image:url(images/testimonials/user-2.jpg);"></span>
+                    <ul class="small-stars tst-stars">
+                        <li class="star-1"></li>
+                        <li class="star-1"></li>
+                        <li class="star-1"></li>
+                        <li class="star-05"></li>
+                        <li class="star-0"></li>
+                    </ul>
+                    <p>This place is amazing! Located on the side of a hill in the small village in Spain, the villa provides you with a spectacular view of the countryside.</p>
+                    <h5>Irene Nunez</h5>
+                </div>
+                    </div>
+                    <div>
+                <div class="tst-slide">
+                    <div class="tst-thumb" style="background-image:url(images/testimonials/testimonial-3.jpg);">
+                    </div>
+                    <span class="tst-user" style="background-image:url(images/testimonials/user-3.jpg);"></span>
+                    <ul class="small-stars tst-stars">
+                        <li class="star-1"></li>
+                        <li class="star-1"></li>
+                        <li class="star-1"></li>
+                        <li class="star-05"></li>
+                        <li class="star-0"></li>
+                    </ul>
+                    <p>I had a fantastic stay at Katrin's apartment! The location is fabulous - the apartment is in the middle of bustling Kreuzberg yet the room is tucked away facing a courtyard so that one can get a quiet night's sleep.</p>
+                    <h5>Ronald Reed</h5>
+                </div>
+                    </div>
+                    <div>
+                <div class="tst-slide">
+                    <div class="tst-thumb" style="background-image:url(images/testimonials/testimonial-4.jpg);">
+                    </div>
+                    <span class="tst-user" style="background-image:url(images/testimonials/user-4.jpg);"></span>
+                    <ul class="small-stars tst-stars">
+                        <li class="star-1"></li>
+                        <li class="star-1"></li>
+                        <li class="star-1"></li>
+                        <li class="star-05"></li>
+                        <li class="star-0"></li>
+                    </ul>
+                    <p>Awesome host, apartment , location , city , and price ! I would stay again for sure. The apartment is clean fun safe and comfortable The host is sweet helpful and considerate.</p>
+                    <h5>Jason Brooks</h5>
+                </div>
+                    </div>
+                    <div>
+                <div class="tst-slide">
+                    <div class="tst-thumb" style="background-image:url(images/testimonials/testimonial-5.jpg);">
+                    </div>
+                    <span class="tst-user" style="background-image:url(images/testimonials/user-5.jpg);"></span>
+                    <ul class="small-stars tst-stars">
+                        <li class="star-1"></li>
+                        <li class="star-1"></li>
+                        <li class="star-1"></li>
+                        <li class="star-05"></li>
+                        <li class="star-0"></li>
+                    </ul>
+                    <p>I had a great experience at Lea's place. Apartment is lovely and very spacious exactly as pictures and description. I love the pre-war building style and surrounding neighbourhood. Thanks Lea!</p>
+                    <h5>Elizabeth Pope</h5>
+                </div>
+                    </div>
+                    <div>
+                <div class="tst-slide">
+                    <div class="tst-thumb" style="background-image:url(images/testimonials/testimonial-1.jpg);">
+                    </div>
+                    <span class="tst-user" style="background-image:url(images/testimonials/user-1.jpg);"></span>
+                    <ul class="small-stars tst-stars">
+                        <li class="star-1"></li>
+                        <li class="star-1"></li>
+                        <li class="star-1"></li>
+                        <li class="star-05"></li>
+                        <li class="star-0"></li>
+                    </ul>
+                    <p>Thomas was a great host and was so nice when we unexpectedly landed in Melbourne earlier than anticipated. The apartment is very homey and welcoming and very close to transport. We had a great stay.</p>
+                    <h5>Edgar Glover</h5>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-new">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h1 class="block-title white tst-title">New apartments and rooms</h1>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="rooms-box">
+                                <div class="rooms-left">
+                                    <h2>Tim's Apartment in Barcelona</h2>
+                                    <div class="stars-reviews">
+                                        <ul class="small-stars rooms-stars">
+                                            <li class="star-1"></li>
+                                            <li class="star-1"></li>
+                                            <li class="star-1"></li>
+                                            <li class="star-05"></li>
+                                            <li class="star-0"></li>
+                                        </ul>
+                                        <span class="rooms-reviews">8 reviews</span>
+                                    </div>
+                                    <p class="rooms-icons">
+                                        <a href="#"><i class="fa fa-bed" aria-hidden="true"></i></a> 2 
+                                        <a href="#"><i class="fa fa-bath" aria-hidden="true"></i></a> 1 
+                                        <a href="#"><i class="fa fa-wifi" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-car" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-paw" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-thermometer-quarter" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-shield" aria-hidden="true"></i></a>
+                                    </p>
+                                    <p class="rooms-desc">Single bedroom for rent in renovated apartment with luxury services. Best solution for... honeymoon and vacation...</p>
+                                    <div class="read-more">&nbsp;</div>
+                                </div>
+                                <div class="rooms-right" style="background-image: url(images/rooms/rooms-1.jpg);"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="rooms-box">
+                                <div class="rooms-left">
+                                    <h2>Studio Room in London with Breakfast-Provided</h2>
+                                    <div class="stars-reviews">
+                                        <ul class="small-stars rooms-stars">
+                                            <li class="star-1"></li>
+                                            <li class="star-1"></li>
+                                            <li class="star-1"></li>
+                                            <li class="star-05"></li>
+                                            <li class="star-0"></li>
+                                        </ul>
+                                        <span class="rooms-reviews">8 reviews</span>
+                                    </div>
+                                    <p class="rooms-icons">
+                                        <a href="#"><i class="fa fa-bed" aria-hidden="true"></i></a> 2 
+                                        <a href="#"><i class="fa fa-bath" aria-hidden="true"></i></a> 1 
+                                        <a href="#"><i class="fa fa-wifi" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-car" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-paw" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-thermometer-quarter" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-shield" aria-hidden="true"></i></a>
+                                    </p>
+                                    <p class="rooms-desc">Single bedroom for rent in renovated apartment with luxury services. Best solution for... honeymoon and vacation...</p>
+                                    <div class="read-more">&nbsp;</div>
+                                </div>
+                                <div class="rooms-right" style="background-image: url(images/rooms/rooms-2.jpg);"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="rooms-box">
+                                <div class="rooms-left">
+                                    <h2>Rooms for Rent in the Center of Moscow</h2>
+                                    <div class="stars-reviews">
+                                        <ul class="small-stars rooms-stars">
+                                            <li class="star-1"></li>
+                                            <li class="star-1"></li>
+                                            <li class="star-1"></li>
+                                            <li class="star-05"></li>
+                                            <li class="star-0"></li>
+                                        </ul>
+                                        <span class="rooms-reviews">8 reviews</span>
+                                    </div>
+                                    <p class="rooms-icons">
+                                        <a href="#"><i class="fa fa-bed" aria-hidden="true"></i></a> 2 
+                                        <a href="#"><i class="fa fa-bath" aria-hidden="true"></i></a> 1 
+                                        <a href="#"><i class="fa fa-wifi" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-car" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-paw" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-thermometer-quarter" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-shield" aria-hidden="true"></i></a>
+                                    </p>
+                                    <p class="rooms-desc">Single bedroom for rent in renovated apartment with luxury services. Best solution for... honeymoon and vacation...</p>
+                                    <div class="read-more">&nbsp;</div>
+                                </div>
+                                <div class="rooms-right" style="background-image: url(images/rooms/rooms-3.jpg);"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="rooms-box">
+                                <div class="rooms-left">
+                                    <h2>The House of Happiness in Sydney</h2>
+                                    <div class="stars-reviews">
+                                        <ul class="small-stars rooms-stars">
+                                            <li class="star-1"></li>
+                                            <li class="star-1"></li>
+                                            <li class="star-1"></li>
+                                            <li class="star-05"></li>
+                                            <li class="star-0"></li>
+                                        </ul>
+                                        <span class="rooms-reviews">8 reviews</span>
+                                    </div>
+                                    <p class="rooms-icons">
+                                        <a href="#"><i class="fa fa-bed" aria-hidden="true"></i></a> 2 
+                                        <a href="#"><i class="fa fa-bath" aria-hidden="true"></i></a> 1 
+                                        <a href="#"><i class="fa fa-wifi" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-car" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-paw" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-thermometer-quarter" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-shield" aria-hidden="true"></i></a>
+                                    </p>
+                                    <p class="rooms-desc">Single bedroom for rent in renovated apartment with luxury services. Best solution for... honeymoon and vacation...</p>
+                                    <div class="read-more">&nbsp;</div>
+                                </div>
+                                <div class="rooms-right" style="background-image: url(images/rooms/rooms-4.jpg);"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 text-center">
+                            <button class="btn btn-secondary secondary-on-blue">Browse All</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h1 class="block-title white tst-title">Get Inspired</h1>
+                    <div class="home-inspired">
+                        <div class="inspired-slide" style="background-image: url(images/inspired/inspired-1.jpg);">
+                            <span class="inspired-inner">
+                                <h3>Looking for Big City?</h3>
+                                <p>Explore 180+ apartment and rooms in Melbourne from $20/night!</p>
+                            </span>
+                        </div>
+                        <div class="inspired-slide" style="background-image: url(images/inspired/inspired-2.jpg);">
+                            <span class="inspired-inner">
+                                <h3>Apartments in New York</h3>
+                                <p>Explore 180+ apartment and rooms in New York from $59/night!</p>
+                            </span>
+                        </div>
+                        <div class="inspired-slide" style="background-image: url(images/inspired/inspired-1.jpg);">
+                            <span class="inspired-inner">
+                                <h3>Looking for Big City?</h3>
+                                <p>Explore 180+ apartment and rooms in Melbourne from $20/night!</p>
+                            </span>
+                        </div>
+                        <div class="inspired-slide" style="background-image: url(images/inspired/inspired-2.jpg);">
+                            <span class="inspired-inner">
+                                <h3>Apartments in New York</h3>
+                                <p>Explore 180+ apartment and rooms in New York from $59/night!</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-3">
+        <div class="container">
+            <div class="row row-home3">
+                <div class="col-sm-4 text-center">
+                    <span class="icon-3 icon-cities3"></span>
+                    <h1>Explore Countries  &amp; Cities</h1>
+                    <p>Maecenas scelerisque rutrum risus id venenatis. Vivamus enim massa, semper quis fermentum nec, ultricies quis justo.</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <span class="icon-3 icon-book3"></span>
+                    <h1>Book It Easily</h1>
+                    <p>Maecenas scelerisque rutrum risus id venenatis. Vivamus enim massa, semper quis fermentum nec, ultricies quis justo.</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <span class="icon-3 icon-home3"></span>
+                    <h1>Feel at home</h1>
+                    <p>Maecenas scelerisque rutrum risus id venenatis. Vivamus enim massa, semper quis fermentum nec, ultricies quis justo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="block-title black blog-title">Recent stories<span><a href="#">Visit our blog</a></span></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="home-blog-thumb" style="background-image: url(images/blog/blog-1.jpg);">
+                    </div>
+                    <div class="home-blog-tags">
+                        <a href="#">Travel</a>
+                        <a href="#">Active Life</a>
+                    </div>
+                    <h1>Expat Stories. Best Places for Surfing in South-East Asia</h1>
+                    <div class="home-blog-date">
+                        <span>June 27, 2016</span><span>by james Sneider</span>
+                    </div>
+                    <p>One thing I didn't realize before going to Buenos Aires was that it's a city of people who love literature, and who love reading. It's a wonderful place for a writer.</p>
+                    <div class="home-blog-comments"><i class="fa fa-comments-o" aria-hidden="true"></i> 28 <a href="#">Continue reading</a></div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="home-blog-thumb" style="background-image: url(images/blog/blog-2.jpg);">
+                    </div>
+                    <div class="home-blog-tags">
+                        <a href="#">Travel</a>
+                        <a href="#">Active Life</a>
+                    </div>
+                    <h1>Getting Cheap Airfare For Last Minute Travel</h1>
+                    <div class="home-blog-date">
+                        <span>June 27, 2016</span><span>by james Sneider</span>
+                    </div>
+                    <p>One thing I didn't realize before going to Buenos Aires was that it's a city of people who love literature, and who love reading. It's a wonderful place for a writer.</p>
+                    <div class="home-blog-comments"><i class="fa fa-comments-o" aria-hidden="true"></i> 28 <a href="#">Continue reading</a></div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="home-blog-thumb" style="background-image: url(images/blog/blog-3.jpg);">
+                    </div>
+                    <div class="home-blog-tags">
+                        <a href="#">Travel</a>
+                        <a href="#">Active Life</a>
+                    </div>
+                    <h1>See The Unmatched Beauty Of The Great Lakes</h1>
+                    <div class="home-blog-date">
+                        <span>June 27, 2016</span><span>by james Sneider</span>
+                    </div>
+                    <p>One thing I didn't realize before going to Buenos Aires was that it's a city of people who love literature, and who love reading. It's a wonderful place for a writer.</p>
+                    <div class="home-blog-comments"><i class="fa fa-comments-o" aria-hidden="true"></i> 28 <a href="#">Continue reading</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-map">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="block-title black home-map-title">Explore Objects on the WorldMap</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div style="height: 425px; width:100%; background-image:url(images/world-map.png); background-size:auto 100%; background-repeat:no-repeat; background-position:50% 50%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-save">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1>Save up to 20% of your next trip</h1>
+                    <h5>Subscribe and get our weekly deals coupons. We don't spam!</h5>
+                </div>
+                <div class="col-sm-6">
+                    <div class="input-group home-save-group">
+                        <input type="text" class="form-control input-lg" placeholder="Enter your email..." />
+                        <span class="input-group-btn">
+                            <button class="btn btn-default btn-lg" type="button">Subscribe</button>
+                        </span>
+                    </div><!-- /input-group -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="row footer-row-1">
+                <div class="col-sm-3">
+                    <div class="footer-box first-box">
+                        <h2>Site Settings</h2>
+                        <form>
+                            <label>Currency</label>
+                            <select class="form-control">
+                                <option>$ United States Dollar</option>
+                            </select>
+                            <label>Language</label>
+                            <select class="form-control">
+                                <option>English (International)</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="footer-box">
+                        <h2>Account</h2>
+                        <ul class="footer-menu">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">My Bookings</a></li>
+                            <li><a href="#">My Wishlist</a></li>
+                            <li><a href="#">Checkout</a></li>
+                            <li><a href="#">Become a host</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="footer-box">
+                        <h2>Useful Information</h2>
+                        <ul class="footer-menu">
+                            <li><a href="#">F.A.Q.</a></li>
+                            <li><a href="#">Payment &amp; Pricing</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Returns &amp; Refunds</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="footer-box">
+                        <h2>Recent Tweets</h2>
+                        <p class="tweet">Donec viverra odio arcu, quis fringilla urna fringilla ac. <span>http://t.co/3gdjk78<br />2 hours ago</span></p>
+                        <p class="tweet">Donec viverra odio arcu, quis fringilla urna fringilla ac. <span>http://t.co/3gdjk78<br />2 hours ago</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer-bottom-row">
+                <div class="col-sm-6">
+                    <div class="footer-box first-box">
+                        <h2>About us</h2>
+                        <div class="about">
+                            <p>Nam id tortor efficitur, vulputate libero sed, aliquam erat. Aliquam porttitor volutpat lacus, sit amet pulvinar felis. Aenean efficitur lacinia lorem egestas convallis.</p> 
+                            <p>Vestibulum ullamcorper, sem ut condimentum sodales, dui magna aliquam quam, at sodales urna sapien a magna. Nulla sit amet mi in, consequat imperdiet diam. Curabitur sit amet . Phasellus lacus lorem, facilisis non turpis et.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="footer-box">
+                        <h2>Get In Touch</h2>
+                        <p class="intouch">
+                            16, office 22 Auezov street<br />
+                            050000, Almaty, Kazakhstan<br /><br />
+                            +7 701 757 8779<br /><br />
+                            <a href="#">info@websitename.com</a><br />
+                            <a href="#">www.websitename.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="footer-box">
+                        <h2>Stay Connected</h2>
+                        <div class="connected-buttons">
+                            <a href="#" class="btn-connected btn-fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" class="btn-connected btn-tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" class="btn-connected btn-gp"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href="#" class="btn-connected btn-yt"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                            <a href="#" class="btn-skype"><i class="fa fa-skype" aria-hidden="true"></i> Skype Call</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row copyright-row">
+                <div class="col-sm-6">
+                    <a href="#" class="icon-pay icon-paypal"></a>
+                    <a href="#" class="icon-pay icon-skrill"></a>
+                    <a href="#" class="icon-pay icon-visa"></a>
+                    <a href="#" class="icon-pay icon-mastercard"></a>
+                    <a href="#" class="icon-pay icon-bitcoin"></a>
+                    <a href="#" class="icon-pay icon-discoverc"></a>
+                    <a href="#" class="icon-pay icon-amazon"></a>
+                </div>
+                <div class="col-sm-6 text-right">
+                    <p>Copyright &copy; 2016 Indochina. Designed by <a href="#">Bekzat Sadykov</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Javascripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+
+<script>
+$(document).ready(function()
+{
+    $('.hero-slider').slick({
+        autoplay: true,
+        slidesToShow: 3,
+        autoplaySpeed: 3000,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+        responsive: [
+        {
+            breakpoint: 550,
+            settings:
+            {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 380,
+            settings:
+            {
+                slidesToShow: 1
+            }
+        }
+        ]
+    });
+    $('.tst-home').slick({
+        autoplay: true,
+        slidesToShow: 5,
+        autoplaySpeed: 3000,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+        responsive: [
+        {
+            breakpoint: 1000,
+            settings:
+            {
+                slidesToShow: 4
+            }
+        },
+        {
+            breakpoint: 768,
+            settings:
+            {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 550,
+            settings:
+            {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 380,
+            settings:
+            {
+                slidesToShow: 1
+            }
+        }
+    ]
+    });
+    $('.home-inspired').on('init', function(event, slick)
+    {
+        $('.slick-initialized').each(function(i,v)
+        {
+            var _top = $(this).height() + 28;
+            var _width = $(this).width();
+            var _liw = 0;
+            $(this).find('.slick-dots').children('li').each(function(i,v)
+            {
+                _liw += 30;
+            });
+            var _left1 = (_width/2) - (_liw/2)-35;
+            var _left2 = (_width/2) + (_liw/2)+5;
+            $(this).find('.slick-prev').css('top', _top+'px').css('margin', '0').css('left', _left1+'px').css('z-index', '1000');
+            $(this).find('.slick-next').css('top', _top+'px').css('margin', '0').css('left', _left2+'px').css('z-index', '1000');
+        });
+        /*
+        $('.slick-dots').each(function(i,v)
+        {
+            var top = $(this).offset().top;
+            var left = $(this).offset().left;
+            var width = $(this).width();
+            var pleft = left+width;
+            var liw = 0;
+            $(this).children('li').each(function(i,v)
+            {
+                liw += ($(this).width()+5);
+            });
+            var left1 = (width/2)-liw-12;
+            var left2 = (width/2)+liw-16;
+            $(this).append('<a href="#" style="position:absolute; left:'+left1+'px; top:6px; width:24px; height:11px;" class="arrow-left"></a>');
+            $(this).append('<a href="#" style="position:absolute; left:'+left2+'px; top:6px; width:24px; height:11px;" class="arrow-right"></a>');
+        });
+        */
+    });
+    $('.home-inspired').slick({
+        autoplay: true,
+        slidesToShow: 1,
+        autoplaySpeed: 3000,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+        //prevArrow: '<a class="slick-arrow arrow-left"></a>'
+    });
+    //
+    $('input.date-picker').datepicker({});
+});
+</script>
+</body>
+</html>
